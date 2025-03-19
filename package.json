@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-pages",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run cleanbuild && next build && npm run replacenextfile",
+    "start": "next start",
+    "lint": "next lint",
+    "cleanbuild": "rmdir /s /q .next",
+    "replacenextfile": "node fix-static-paths.js",
+    "removecache": "rmdir /s /q .next\\cache",
+    "upload": "npm run removecache && npx nwabap upload --nwabaprc ./.nwabaprc"
+  },
+  "dependencies": {
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "@ui5/webcomponents": "2.8.0",
+    "@ui5/webcomponents-fiori": "2.8.0",
+    "@ui5/webcomponents-react": "2.8.0",
+    "eslint": "9.22.0",
+    "eslint-config-next": "15.2.2",
+    "next": "15.2.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "typescript": "5.8.2"
+  },
+  "devDependencies": {
+    "nwabap-ui5uploader": "^1.2.0"
+  }
+}
