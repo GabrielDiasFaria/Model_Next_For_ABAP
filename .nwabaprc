@@ -1,0 +1,13 @@
+{
+    "base": "./.next",
+    "conn_server": "http://uldvvi12.seg-social.pt:8000",
+    "conn_user": "abe000719",
+    "conn_password": "Anima1532___",
+    "abap_package": "$TMP",
+    "abap_bsp": "ZZ1NEXT",
+    "abap_bsp_text": "Fluxera Teste",
+    "exclude": [
+        "cache/**",
+        "**/*.pack"
+    ]
+}
